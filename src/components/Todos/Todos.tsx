@@ -4,7 +4,7 @@ import axios from '../../confing/axios';
 import '../Todos/Todos.scss';
 import TodoItem from './TodoItem';
 import {connect} from 'react-redux';
-import {initTodos,updateTodo} from '../../confing/redux/action';
+import {initTodos,updateTodo} from '../../confing/redux/actions/action';
 
 
 class Todos extends React.Component <any>{

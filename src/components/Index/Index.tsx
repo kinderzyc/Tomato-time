@@ -3,6 +3,7 @@ import axios from '../../confing/axios';
 import { Menu, Dropdown,Icon} from 'antd';
 import history from '../../confing/history';
 import Todos from '../Todos/Todos';
+import Tomatoes from '../Tomatoes/Tomatoes';
 
 
 import './Index.scss'
@@ -74,6 +75,7 @@ class Component extends React.Component<IRouter,IindexState>{
                     </Dropdown>
                 </header>
                 <main>
+                    <Tomatoes/>
                     <Todos/>
                 </main>
             </div>

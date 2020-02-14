@@ -1,7 +1,7 @@
 import React from 'react';
 import {Input,Icon} from 'antd';
 import {connect} from 'react-redux';
-import {addTodo} from '../../confing/redux/action';
+import {addTodo} from '../../confing/redux/actions/action';
 import axios from '../../confing/axios';
 
 interface ITodoInputState{
@@ -19,7 +19,6 @@ class TodoInput extends React.Component<ITodoInputProps,ITodoInputState>{
         this.state = {
             description:''
         }
-        console.log(this.props)
     }
 
     onkeyUp = (e: { keyCode: any; }) =>{
